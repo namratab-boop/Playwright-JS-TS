@@ -25,8 +25,3 @@ steps:
       LT_USERNAME: $(LT_USERNAME)
       LT_ACCESS_KEY: $(LT_ACCESS_KEY)
 
-    - script: node ./parallel.js
-    displayName: 'Run Parallel Tests'
-    env:
-      LT_USERNAME: $(LT_USERNAME)
-      LT_ACCESS_KEY: $(LT_ACCESS_KEY)
