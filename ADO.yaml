@@ -24,4 +24,9 @@ steps:
     env:
       LT_USERNAME: $(LT_USERNAME)
       LT_ACCESS_KEY: $(LT_ACCESS_KEY)
-
+- script: node ./playwright-parallel.js
+  
+    displayName: 'Run Single Windows Test'
+    env:
+      LT_USERNAME: $(LT_USERNAME)
+      LT_ACCESS_KEY: $(LT_ACCESS_KEY)
