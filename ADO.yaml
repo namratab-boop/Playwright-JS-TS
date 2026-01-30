@@ -19,14 +19,13 @@ steps:
 
   # Fix: Use the direct file path and ensure it's treated as a test
   - script: node ./playwright-single.js
-  
     displayName: 'Run Single Windows Test'
     env:
       LT_USERNAME: $(LT_USERNAME)
       LT_ACCESS_KEY: $(LT_ACCESS_KEY)
-- script: node ./playwright-parallel.js
-  
-    displayName: 'Run Single Windows Test'
+
+  - script: node ./playwright-parallel.js
+    displayName: 'Run Parallel Windows Test'
     env:
       LT_USERNAME: $(LT_USERNAME)
       LT_ACCESS_KEY: $(LT_ACCESS_KEY)
